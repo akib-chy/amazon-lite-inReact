@@ -1,0 +1,19 @@
+.navbar-item {
+  display: flex;
+  align-items: center;
+}
+.navbar-item li {
+  list-style: none;
+  margin-left: 20px;
+}
+.navbar-item li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+.cart-button {
+  padding: 5px;
+  border: none;
+  font-size: 15px;
+  background-color: rgba(128, 128, 128, 0.294);
+}
