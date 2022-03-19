@@ -39,7 +39,7 @@ const Product = (props) => {
     </div>
   );
 };
-const Rating = ({ rate }) => {
+export const Rating = ({ rate }) => {
   if (rate.rate >= 4.5) {
     return (
       <p className="text-warning icon">
@@ -152,6 +152,8 @@ const Rating = ({ rate }) => {
         </div>
       </p>
     );
+  } else if (rate.rate) {
+    return <p className="text-warning icon">No Rating</p>;
   }
   return <div></div>;
 };

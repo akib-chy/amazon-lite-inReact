@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
+import { Rating } from "../Product/Product";
 
-const ReactModal = ({ product }) => {
-  const { image, title, price, description, rating, category } = product;
+const ReactModal = (props) => {
+  const { image, title, price, description, rating, category } = props.product;
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
@@ -30,9 +30,7 @@ const ReactModal = ({ product }) => {
           <h4 className="mt-4 text-center text-success">{title}</h4>
           <p className="mt-3 lead">{description}</p>
           <div className="d-flex align-items-center justify-content-between mt-4">
-            <p className="text-warning fw-bold ms-5">
-              Rating: {rating.rate} / {rating.count}
-            </p>
+            <Rating rate={rating}></Rating>
             <p className="me-5 fw-bold fs-5 text-success">Price:$ {price}</p>
           </div>
         </Modal.Body>
