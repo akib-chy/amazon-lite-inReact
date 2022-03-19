@@ -7,7 +7,7 @@ const Navbar = (props) => {
       <div className="container mt-4 text-start ">
         <nav className="d-flex align-items-center justify-content-between">
           <a href="#" className="navbar-brand fs-5 fw-bold text-success">
-            Amazon <small className="fs-3 text-danger">Light</small>
+            Amazon <small className="fs-3 text-danger">Lite</small>
           </a>
           <ul className="navbar-item">
             <li className="nav-item">
