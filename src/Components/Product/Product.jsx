@@ -20,13 +20,14 @@ const Product = (props) => {
           <h5 className="card-title">{title.slice(0, 40)}...</h5>
           <h5 className="mt-3 text-danger">$ {price} </h5>
           <p className="card-text">{description.slice(0, 100)}...</p>
-          <p className="text-warning icon">
+          {/* <p className="text-warning icon">
             <i className="fa-solid fa-star"></i>
             <i className="fa-solid fa-star"></i>
             <i className="fa-solid fa-star"></i>
             <i className="fa-solid fa-star-half-stroke"></i>
             <small className="ms-1 text-secondary">({rating.count})</small>
-          </p>
+          </p> */}
+          <Rating rate={rating}></Rating>
         </div>
         <div className="button-container border-0 bg-none card-footer p-4">
           <ReactModal product={props.product}></ReactModal>
@@ -37,6 +38,122 @@ const Product = (props) => {
       </div>
     </div>
   );
+};
+const Rating = ({ rate }) => {
+  if (rate.rate >= 4.5) {
+    return (
+      <p className="text-warning icon">
+        <div>
+          <small className="text-success">{rate.rate}</small>
+          <div>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star-half-stroke"></i>
+            <small className="ms-1 text-secondary">({rate.count})</small>
+          </div>
+        </div>
+      </p>
+    );
+  } else if (rate.rate >= 4) {
+    return (
+      <p className="text-warning icon">
+        <div>
+          <small className="text-success">{rate.rate}</small>
+          <div>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star-half"></i>
+            <small className="ms-1 text-secondary">({rate.count})</small>
+          </div>
+        </div>
+      </p>
+    );
+  } else if (rate.rate >= 3.5) {
+    return (
+      <p className="text-warning icon">
+        <div>
+          <small className="text-success">{rate.rate}</small>
+          <div>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star-half-stroke"></i>
+            <i className="fa-solid fa-star text-light"></i>
+            <small className="ms-1 text-secondary">({rate.count})</small>
+          </div>
+        </div>
+      </p>
+    );
+  } else if (rate.rate === 3) {
+    return (
+      <p className="text-warning icon">
+        <div>
+          <small className="text-success">{rate.rate}</small>
+          <div>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star text-light"></i>
+            <i className="fa-solid fa-star text-light"></i>
+            <small className="ms-1 text-secondary">({rate.count})</small>
+          </div>
+        </div>
+      </p>
+    );
+  } else if (rate.rate > 3) {
+    return (
+      <p className="text-warning icon">
+        <div>
+          <small className="text-success">{rate.rate}</small>
+          <div>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star-half"></i>
+            <i className="fa-solid fa-star text-light"></i>
+            <small className="ms-1 text-secondary">({rate.count})</small>
+          </div>
+        </div>
+      </p>
+    );
+  } else if (rate.rate >= 2.5) {
+    return (
+      <p className="text-warning icon">
+        <div>
+          <small className="text-success">{rate.rate}</small>
+          <div>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star-half-stroke"></i>
+            <i className="fa-solid fa-star text-light"></i>
+            <i className="fa-solid fa-star text-light"></i>
+            <small className="ms-1 text-secondary">({rate.count})</small>
+          </div>
+        </div>
+      </p>
+    );
+  } else if (rate.rate >= 2) {
+    return (
+      <p className="text-warning icon">
+        <div>
+          <small className="text-success">{rate.rate}</small>
+          <div>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star-half"></i>
+            <i className="fa-solid fa-star text-light"></i>
+            <i className="fa-solid fa-star text-light"></i>
+            <small className="ms-1 text-secondary">({rate.count})</small>
+          </div>
+        </div>
+      </p>
+    );
+  }
+  return <div></div>;
 };
 
 export default Product;
