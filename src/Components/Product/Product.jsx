@@ -82,7 +82,7 @@ export const Rating = ({ rate }) => {
             <i className="fa-solid fa-star"></i>
             <i className="fa-solid fa-star"></i>
             <i className="fa-solid fa-star-half-stroke"></i>
-            <i className="fa-solid fa-star text-light"></i>
+            <i className="fa-solid fa-star gray"></i>
             <small className="ms-1 text-secondary">({rate.count})</small>
           </div>
         </div>
@@ -97,8 +97,8 @@ export const Rating = ({ rate }) => {
             <i className="fa-solid fa-star"></i>
             <i className="fa-solid fa-star"></i>
             <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star text-light"></i>
-            <i className="fa-solid fa-star text-light"></i>
+            <i className="fa-solid fa-star gray"></i>
+            <i className="fa-solid fa-star gray"></i>
             <small className="ms-1 text-secondary">({rate.count})</small>
           </div>
         </div>
@@ -114,7 +114,7 @@ export const Rating = ({ rate }) => {
             <i className="fa-solid fa-star"></i>
             <i className="fa-solid fa-star"></i>
             <i className="fa-solid fa-star-half"></i>
-            <i className="fa-solid fa-star text-light"></i>
+            <i className="fa-solid fa-star gray"></i>
             <small className="ms-1 text-secondary">({rate.count})</small>
           </div>
         </div>
@@ -129,8 +129,8 @@ export const Rating = ({ rate }) => {
             <i className="fa-solid fa-star"></i>
             <i className="fa-solid fa-star"></i>
             <i className="fa-solid fa-star-half-stroke"></i>
-            <i className="fa-solid fa-star text-light"></i>
-            <i className="fa-solid fa-star text-light"></i>
+            <i className="fa-solid fa-star gray"></i>
+            <i className="fa-solid fa-star gray"></i>
             <small className="ms-1 text-secondary">({rate.count})</small>
           </div>
         </div>
@@ -145,8 +145,8 @@ export const Rating = ({ rate }) => {
             <i className="fa-solid fa-star"></i>
             <i className="fa-solid fa-star"></i>
             <i className="fa-solid fa-star-half"></i>
-            <i className="fa-solid fa-star text-light"></i>
-            <i className="fa-solid fa-star text-light"></i>
+            <i className="fa-solid fa-star gray"></i>
+            <i className="fa-solid fa-star gray"></i>
             <small className="ms-1 text-secondary">({rate.count})</small>
           </div>
         </div>
