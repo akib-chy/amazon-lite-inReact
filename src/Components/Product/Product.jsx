@@ -43,7 +43,7 @@ const Product = (props) => {
 export const Rating = ({ rate }) => {
   if (rate.rate >= 4.5) {
     return (
-      <p className="text-warning icon">
+      <div className="text-warning icon">
         <div>
           <small className="text-success">{rate.rate}</small>
           <div>
@@ -55,11 +55,11 @@ export const Rating = ({ rate }) => {
             <small className="ms-1 text-secondary">({rate.count})</small>
           </div>
         </div>
-      </p>
+      </div>
     );
   } else if (rate.rate >= 4) {
     return (
-      <p className="text-warning icon">
+      <div className="text-warning icon">
         <div>
           <small className="text-success">{rate.rate}</small>
           <div>
@@ -71,11 +71,11 @@ export const Rating = ({ rate }) => {
             <small className="ms-1 text-secondary">({rate.count})</small>
           </div>
         </div>
-      </p>
+      </div>
     );
   } else if (rate.rate >= 3.5) {
     return (
-      <p className="text-warning icon">
+      <div className="text-warning icon">
         <div>
           <small className="text-success">{rate.rate}</small>
           <div>
@@ -87,11 +87,11 @@ export const Rating = ({ rate }) => {
             <small className="ms-1 text-secondary">({rate.count})</small>
           </div>
         </div>
-      </p>
+      </div>
     );
   } else if (rate.rate === 3) {
     return (
-      <p className="text-warning icon">
+      <div className="text-warning icon">
         <div>
           <small className="text-success">{rate.rate}</small>
           <div>
@@ -103,11 +103,11 @@ export const Rating = ({ rate }) => {
             <small className="ms-1 text-secondary">({rate.count})</small>
           </div>
         </div>
-      </p>
+      </div>
     );
   } else if (rate.rate > 3) {
     return (
-      <p className="text-warning icon">
+      <div className="text-warning icon">
         <div>
           <small className="text-success">{rate.rate}</small>
           <div>
@@ -119,11 +119,11 @@ export const Rating = ({ rate }) => {
             <small className="ms-1 text-secondary">({rate.count})</small>
           </div>
         </div>
-      </p>
+      </div>
     );
   } else if (rate.rate >= 2.5) {
     return (
-      <p className="text-warning icon">
+      <div className="text-warning icon">
         <div>
           <small className="text-success">{rate.rate}</small>
           <div>
@@ -135,11 +135,11 @@ export const Rating = ({ rate }) => {
             <small className="ms-1 text-secondary">({rate.count})</small>
           </div>
         </div>
-      </p>
+      </div>
     );
   } else if (rate.rate >= 2) {
     return (
-      <p className="text-warning icon">
+      <div className="text-warning icon">
         <div>
           <small className="text-success">{rate.rate}</small>
           <div>
@@ -151,7 +151,7 @@ export const Rating = ({ rate }) => {
             <small className="ms-1 text-secondary">({rate.count})</small>
           </div>
         </div>
-      </p>
+      </div>
     );
   } else if (rate.rate) {
     return <p className="text-warning icon">No Rating</p>;

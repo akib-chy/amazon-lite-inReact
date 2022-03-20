@@ -6,18 +6,23 @@ const Navbar = (props) => {
     <div>
       <div className="container mt-4 text-start ">
         <nav className="d-flex align-items-center justify-content-between">
-          <a href="#" className="navbar-brand fs-5 fw-bold text-success">
-            Amazon <small className="fs-3 text-danger">Lite</small>
-          </a>
+          <div>
+            <a
+              href="./Navbar"
+              className="navbar-brand fs-5 fw-bold text-success"
+            >
+              Amazon <small className="fs-3 text-danger">Lite</small>
+            </a>
+          </div>
           <ul className="navbar-item">
             <li className="nav-item">
-              <a className="navbar-link" href="#">
+              <a className="navbar-link" href="./Navbar">
                 Home
               </a>
             </li>
 
             <li className="nav-item">
-              <a href="#">
+              <a href="./navbar">
                 <i className="fa-solid fa-cart-arrow-down me-2 text-danger"></i>
                 <button type="button" className="cart-button position-relative">
                   Inbox

@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="mb-3 text-secondary mt-4">
       <small>Copyright © 2022 Amazon-Light.com</small>
-      <h6 clas>
+      <h6>
         Designed By:{" "}
         <a
           target="_blank"
