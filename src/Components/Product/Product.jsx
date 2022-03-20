@@ -27,6 +27,7 @@ const Product = (props) => {
             <i className="fa-solid fa-star-half-stroke"></i>
             <small className="ms-1 text-secondary">({rating.count})</small>
           </p> */}
+
           <Rating rate={rating}></Rating>
         </div>
         <div className="button-container border-0 bg-none card-footer p-4">

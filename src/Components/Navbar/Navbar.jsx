@@ -19,11 +19,11 @@ const Navbar = (props) => {
             <li className="nav-item">
               <a href="#">
                 <i className="fa-solid fa-cart-arrow-down me-2 text-danger"></i>
-                <button type="button" class="cart-button position-relative">
+                <button type="button" className="cart-button position-relative">
                   Inbox
-                  <span class="position-absolute top-5 start-0 translate-middle badge rounded-pill bg-danger">
+                  <span className="position-absolute top-5 start-0 translate-middle badge rounded-pill bg-danger">
                     {props.count}
-                    <span class="visually-hidden">unread messages</span>
+                    <span className="visually-hidden">unread messages</span>
                   </span>
                 </button>
               </a>
